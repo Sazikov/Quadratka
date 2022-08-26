@@ -6,7 +6,7 @@ This project was created to solve square equation. To do this, I used C programm
 You enter coefficients a, b, c. The entered coefficients are analyzed and, depending on the result of the analysis, the roots of the equation are calculated. As a result of the program, the roots of the equation and their number are displaed on the screen.
 
 ## How should you run the program?
-1. Download [files](https://github.com/Sazikov/Quadratka/blob/main/Square_equation_solver.zip) from github. 
+1. Download files from github. 
 2. Transfer files to one directory. 
 3. Open comand line (cmd) and specify address in the directory with files. (Enter **cd** and **directory adress**) *Example: cd C:\Users\max\Desktop\Quadratka*
 4. Compile program (Enter **make**) and run program (**Enter main.exe**)
