@@ -16,4 +16,6 @@ The entered coefficients are analyzed and, depending on the result of the analys
 4. You need to compile program (Enter **make**) and run program (**Enter main.exe**)
 5. You need to enter **a**, **b**, **c** coefficients.
 
-### What
+### What else you need to know:
+- If you want to run Unit test, you should uncomment 6 line (**#define Test**)
+- [Documentation]()
