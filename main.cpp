@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 #include "function.h"
+
 #define Test
 
 
 int main()
 {
-    #ifdef Test
+#ifdef Test
     int succesful = Unit_test();
     if (!(succesful == 0)) return 0;
-    #endif
+#endif
 
     printf ("Square equation solver\n");
     printf ("a*x^2 + b*x + c = 0\n");

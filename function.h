@@ -1,5 +1,5 @@
 /**
-@brief Used to solve square equation ax^2 + bx + c=0
+@brief Used to solve square equation ax^2 + bx + c = 0
 @param[in] coefficient a
 @param[in] coefficient b
 @param[in] coefficient c
@@ -52,19 +52,11 @@ double calculate_discriminant (double a, double b, double c);
 int compare (const double n1, const double n2);
 
 /**
-@brief Used to make first value max from both values
-@param[out] first value
-@param[out] second value
+@brief Used to makes the first argument maximum and the second argument minimum
+@param[out] first argument
+@param[out] second argument
 */
 void maxmin (double *x1, double *x2);
-
-/**
-@brief Used to print equation
-@param[in] coefficient a
-@param[in] coefficient b
-@param[in] coefficient c
-*/
-void print_equation (const double a, const double b, const double c);
 
 
 /**
@@ -76,13 +68,15 @@ void print_equation (const double a, const double b, const double c);
 @param[in] coefficient first answer
 @param[in] coefficient second answer
 @param[out] coefficient test number
-@return 0 if the test is successful and return not 0 if the test isn`t successful
+@return 0 if the test is successful
+@return 1 if the test isn`t successful
+@return 9999 if the test wasn`t tested
 */
-int Testing_square_solver (const double a, const double b, const double c, const int num_roots, const double x1_ans, const double x2_ans, int *test_number);
+int Testing_square_solver (struct Test examp, int *test_number);
 
 /**
 @brief Used to do several tests of square solver
-@return 0 if all test are successful and return not 0 if at least one test isn`t successful
+@return the number of failed tests
 */
 int Unit_test();
 
@@ -116,3 +110,32 @@ enum roots
 */
 double minus_zero (double x);
 
+
+
+/**
+@brief Used to determine the end of a line
+@return True if '\n' was entered
+@return False otherwise
+*/
+bool reading();
+
+/**
+@brief Used to swap arguments
+@param[out] first argument
+@param[out] second argument
+*/
+void swapp (double *x1, double *x2);
+
+
+/**
+@brief Used to make test for square_equation_solver
+*/
+struct Test
+{
+    double a; ///<coefficient a
+    double b; ///<coefficient b
+    double c; ///<coefficient c
+    int num_roots; ///<right number of roots
+    double x1_ans; ///<right first root
+    double x2_ans; ///<right second root
+};
