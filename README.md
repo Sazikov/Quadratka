@@ -11,3 +11,9 @@ The entered coefficients are analyzed and, depending on the result of the analys
 
 ## How should you run the program?
 1. You need to download [files](https://github.com/Sazikov/Quadratka) from github. 
+2. You need to transfer files to one directory. 
+3. You need to open comand line (cmd) and specify address in the directory with files. (Enter **cd** and **directory adress**) *Example: cd C:\Users\max\Desktop\Quadratka*
+4. You need to compile program (Enter **make**) and run program (**Enter main.exe**)
+5. You need to enter **a**, **b**, **c** coefficients.
+
+### What
